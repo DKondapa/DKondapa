@@ -1,0 +1,10 @@
+import requests
+import pandas as pd
+url='https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2017'
+output=requests.get(url)
+output.json()
+
+#2) Read the JSON response from the API
+url='https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson'
+output=requests.get(url)
+output.json()
